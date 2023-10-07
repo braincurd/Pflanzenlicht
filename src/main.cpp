@@ -21,7 +21,7 @@ void loop() {
   // Check for extreme values
   if (sensorValue >= 0 && sensorValue <= 1023) {
     // Map the sensor value to a color gradient
-    int red = map(sensorValue, 0, 1023, 0, 255);
+    int red = map(sensorValue, 0, 1023, 0, 255); //1023 Maximal Wert 0= Minimalwert
     int green = map(sensorValue, 0, 1023, 255, 0);
     int blue = 0;
 
